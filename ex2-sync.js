@@ -25,3 +25,4 @@ fs.readFile(file1)
     console.log("SOMETHING IS GOING WRONG.");
     console.log("Because: ", err.message);
   });
+  
