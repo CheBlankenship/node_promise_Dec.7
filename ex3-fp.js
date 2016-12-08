@@ -25,6 +25,12 @@ var outputFile = process.argv[4];
 //   });
 // });
 
+Promise.all([fs.readFile(file1), fs.readFile(file2)])
+  .then(function(buffers) {
+    console.log(buffers);
+    
+  })
+
 fs.readFile(file1)
   .then(function(buffer) {
     var file1_content = buffer.toString().split('\n');
@@ -40,7 +46,7 @@ fs.readFile(file1)
     console.log('Worked out!');
   })
   .catch(function(err) {
-    console.log("Something went wrong because ", err.massage);
+    console.log("Something went wrong because ", err.stack);
     return ;
   });
 
