@@ -1,1 +1,0 @@
-aoi\nsdvfio\ndododo\n
